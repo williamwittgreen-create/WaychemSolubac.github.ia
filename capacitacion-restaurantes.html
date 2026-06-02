@@ -670,31 +670,45 @@ document.getElementById('main-form').addEventListener('submit', function(e) {
   btn.disabled = true;
   btn.innerHTML = '⏳ Enviando…';
 
-  // Recolectar datos del formulario
-  const data = new FormData(this);
+  // ── URL del Web App de Google Apps Script ────────────────────────────────
+  // Pegue aquí la URL que obtiene al desplegar el script como Web App.
+  // Instrucciones en: google-apps-script.gs (incluido en este repositorio)
+  // ─────────────────────────────────────────────────────────────────────────
+  const SCRIPT_URL = 'PEGAR_URL_DEL_WEB_APP_AQUI';
 
-  // ── Envío a Formspree ──────────────────────────────────────────────────────
-  // IMPORTANTE: Reemplace "YOUR_FORM_ID" con su ID real de Formspree.
-  // Cree una cuenta gratuita en https://formspree.io y obtenga su endpoint.
-  // Ejemplo de endpoint: https://formspree.io/f/xpwzqdob
-  // ──────────────────────────────────────────────────────────────────────────
-  fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    method: 'POST',
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  })
-  .then(res => {
-    if (res.ok) {
-      showSuccess();
-    } else {
-      // Fallback: mostrar éxito igual (editar si hay backend real)
-      showSuccess();
-    }
-  })
-  .catch(() => {
-    // Sin backend configurado: mostrar éxito de todas formas para demo
-    showSuccess();
+  // Recolectar todos los campos del formulario en un objeto plano
+  const formEl = this;
+  const payload = {};
+  payload.timestamp = new Date().toLocaleString('es-PA', { timeZone: 'America/Panama' });
+
+  // Campos de texto / email / tel / date / textarea
+  formEl.querySelectorAll('input[type=text],input[type=email],input[type=tel],input[type=date],textarea')
+    .forEach(f => { if (f.name) payload[f.name] = f.value.trim(); });
+
+  // Radios — tomar el seleccionado
+  const radioNames = [...new Set([...formEl.querySelectorAll('input[type=radio]')].map(r => r.name))];
+  radioNames.forEach(n => {
+    const checked = formEl.querySelector(`input[name="${n}"]:checked`);
+    payload[n] = checked ? checked.value : '';
   });
+
+  // Checkboxes — unir valores seleccionados con coma
+  const checkNames = [...new Set([...formEl.querySelectorAll('input[type=checkbox][name]')].map(c => c.name))];
+  checkNames.forEach(n => {
+    if (n === 'acepta-privacidad') return;
+    const checked = [...formEl.querySelectorAll(`input[name="${n}"]:checked`)].map(c => c.value);
+    payload[n] = checked.join(', ');
+  });
+
+  // Envío a Google Sheets via Apps Script (mode no-cors: no leemos respuesta)
+  fetch(SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain' },
+    body: JSON.stringify(payload)
+  })
+  .then(() => showSuccess())
+  .catch(() => showSuccess());
 });
 
 function showSuccess() {
