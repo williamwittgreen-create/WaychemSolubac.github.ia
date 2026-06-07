@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-way-petroleo: #0F5C7A;
+  --color-way-verde: #1FAE4B;
+  --color-way-lima: #6CD34A;
+  --color-way-turquesa: #3CC7C3;
+  --color-way-azulAgua: #2FA4D9;
+  --color-way-gris: #E6E6E6;
+
+  --font-display: var(--font-display-var), 'Montserrat', sans-serif;
+  --font-body: var(--font-body-var), 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body-var), 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display-var), 'Montserrat', sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display-var), 'Montserrat', sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body-var), 'Open Sans', sans-serif;
+}
