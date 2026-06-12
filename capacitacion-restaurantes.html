@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Solicite capacitación profesional en sanitización e higiene alimentaria para su restaurante. Waychem — David, Chiriquí, Panamá.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Capacitación en Sanitización para Restaurantes · Waychem">
+<meta property="og:description" content="Formulario de solicitud de capacitación en higiene y sanitización para establecimientos de alimentos en Chiriquí, Panamá.">
+<meta property="og:locale" content="es_PA">
+<title>Capacitación en Sanitización para Restaurantes · Waychem</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#15803d;--verde-mid:#16a34a;--verde-light:#dcfce7;--verde-neon:#00e676;
+  --azul:#1e40af;--azul-royal:#1e3a8a;--azul-mid:#3b82f6;--azul-light:#dbeafe;--azul-neon:#60a5fa;
+  --bg:#f8fafc;--bg-white:#ffffff;--bg-section:#f1f5f9;
+  --border:#e2e8f0;--border-g:#bbf7d0;--border-b:#bfdbfe;
+  --text:#0f172a;--text-mid:#374151;--text-dim:#6b7280;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:0 4px 20px rgba(0,0,0,.07),0 2px 8px rgba(0,0,0,.04);
+  --shadow-lg:0 24px 48px rgba(0,0,0,.09),0 8px 20px rgba(0,0,0,.05);
+  --radius:10px;
+  --font-body:"Inter",system-ui,sans-serif;
+  --font-display:"Space Grotesk",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);overflow-x:hidden;line-height:1.6;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--verde);border-radius:3px;}
+
+/* ━━━ NAV ━━━ */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:68px;box-shadow:0 1px 0 rgba(0,0,0,.06);}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo img{height:42px;width:auto;object-fit:contain;}
+.nav-brand-wrap{display:flex;flex-direction:column;line-height:1;}
+.nav-brand{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--verde);letter-spacing:.3px;}
+.nav-sub{font-size:9px;color:var(--azul);letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-top:3px;opacity:.75;}
+.nav-back{display:inline-flex;align-items:center;gap:6px;color:var(--text-mid);font-size:13px;font-weight:500;text-decoration:none;padding:8px 14px;border-radius:8px;border:1px solid var(--border);transition:all .2s;}
+.nav-back:hover{color:var(--verde);background:var(--verde-light);border-color:var(--border-g);}
+.nav-wa{display:inline-flex;align-items:center;gap:6px;background:var(--verde);color:#fff;font-size:13px;font-weight:700;padding:9px 16px;border-radius:8px;text-decoration:none;transition:all .2s;box-shadow:0 2px 8px rgba(21,128,61,.25);}
+.nav-wa:hover{background:var(--verde-mid);}
+
+/* ━━━ HERO ━━━ */
+.form-hero{padding:112px 5% 56px;background:linear-gradient(160deg,#fff 0%,#f0fdf4 40%,#eff6ff 100%);position:relative;overflow:hidden;}
+.hero-blob1{position:absolute;top:-100px;right:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(34,197,94,.1) 0%,transparent 70%);pointer-events:none;}
+.hero-blob2{position:absolute;bottom:-80px;left:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,.08) 0%,transparent 70%);pointer-events:none;}
+.hero-inner{max-width:860px;margin:0 auto;text-align:center;position:relative;z-index:1;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--verde-light);border:1px solid var(--border-g);color:var(--verde);padding:6px 16px;border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.5px;margin-bottom:20px;}
+.hero-badge::before{content:"●";font-size:8px;color:var(--verde-neon);animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+h1.hero-title{font-family:var(--font-display);font-size:clamp(28px,4vw,48px);font-weight:800;line-height:1.1;color:var(--text);margin-bottom:16px;}
+.accent-g{color:var(--verde);}
+.hero-desc{font-size:15px;color:var(--text-mid);line-height:1.8;max-width:640px;margin:0 auto 28px;}
+.hero-meta{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;}
+.meta-pill{display:inline-flex;align-items:center;gap:6px;background:var(--bg-white);border:1px solid var(--border);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:600;color:var(--text-mid);}
+.meta-pill.green{background:var(--verde-light);border-color:var(--border-g);color:var(--verde);}
+.meta-pill.blue{background:var(--azul-light);border-color:var(--border-b);color:var(--azul);}
+
+/* ━━━ FORM WRAP ━━━ */
+.form-wrap{max-width:860px;margin:0 auto;padding:48px 5% 80px;}
+
+/* ━━━ PROGRESS ━━━ */
+.progress-bar{background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:32px;box-shadow:var(--shadow-sm);}
+.progress-label{font-size:12px;font-weight:600;color:var(--text-dim);text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px;display:flex;justify-content:space-between;}
+.progress-track{height:6px;background:var(--bg-section);border-radius:3px;overflow:hidden;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--verde),var(--verde-neon));border-radius:3px;transition:width .4s ease;width:0%;}
+.progress-steps{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap;}
+.prog-step{flex:1;min-width:120px;padding:6px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-section);font-size:11px;font-weight:600;color:var(--text-dim);text-align:center;transition:all .3s;}
+.prog-step.active{background:var(--verde-light);border-color:var(--border-g);color:var(--verde);}
+.prog-step.done{background:var(--verde);border-color:var(--verde);color:#fff;}
+
+/* ━━━ SECCIONES ━━━ */
+.form-section{background:var(--bg-white);border:1px solid var(--border);border-radius:14px;margin-bottom:24px;overflow:hidden;transition:all .3s;box-shadow:var(--shadow-sm);}
+.form-section:hover{box-shadow:var(--shadow-md);}
+.sec-header{padding:22px 28px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:14px;cursor:pointer;user-select:none;}
+.sec-num{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:15px;font-weight:800;flex-shrink:0;}
+.sec-num.green{background:var(--verde-light);color:var(--verde);}
+.sec-num.blue{background:var(--azul-light);color:var(--azul);}
+.sec-info{flex:1;}
+.sec-title{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--text);}
+.sec-subtitle{font-size:12px;color:var(--text-dim);margin-top:2px;}
+.sec-toggle{font-size:18px;color:var(--text-dim);transition:transform .3s;flex-shrink:0;}
+.sec-body{padding:28px;}
+.sec-body.collapsed{display:none;}
+
+/* ━━━ CAMPOS ━━━ */
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
+.field-row.full{grid-template-columns:1fr;}
+.field-group{display:flex;flex-direction:column;gap:6px;}
+label.field-label{font-size:13px;font-weight:600;color:var(--text);}
+label.field-label .req{color:#ef4444;margin-left:2px;}
+.field-hint{font-size:11px;color:var(--text-dim);margin-top:1px;}
+input[type=text],input[type=email],input[type=tel],input[type=date],textarea,select{
+  width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:8px;
+  font-family:var(--font-body);font-size:14px;color:var(--text);background:var(--bg-white);
+  transition:all .2s;outline:none;
+}
+input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=date]:focus,textarea:focus,select:focus{
+  border-color:var(--verde);box-shadow:0 0 0 3px rgba(21,128,61,.1);
+}
+input::placeholder,textarea::placeholder{color:var(--text-dim);}
+textarea{resize:vertical;min-height:90px;line-height:1.6;}
+
+/* Radios y Checkboxes */
+.radio-group,.check-group{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+.radio-group.inline,.check-group.inline{flex-direction:row;flex-wrap:wrap;gap:8px;}
+.radio-opt,.check-opt{display:flex;align-items:center;gap:10px;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;cursor:pointer;transition:all .2s;font-size:13px;font-weight:500;color:var(--text-mid);background:var(--bg);}
+.radio-opt:hover,.check-opt:hover{border-color:var(--verde);background:var(--verde-light);color:var(--verde);}
+.radio-opt input,.check-opt input{width:16px;height:16px;accent-color:var(--verde);flex-shrink:0;}
+.radio-opt.selected,.check-opt.selected{border-color:var(--verde);background:var(--verde-light);color:var(--verde);font-weight:600;}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px;}
+
+/* Divider */
+.field-divider{height:1px;background:var(--border);margin:22px 0;}
+
+/* ━━━ ALERTA INFO ━━━ */
+.form-alert{display:flex;align-items:flex-start;gap:12px;padding:14px 18px;border-radius:9px;border:1px solid var(--border-g);background:var(--verde-light);margin-bottom:22px;font-size:13px;color:var(--text-mid);line-height:1.7;}
+.form-alert strong{color:var(--text);}
+.form-alert .alert-icon{font-size:18px;flex-shrink:0;margin-top:1px;}
+
+/* ━━━ SUBMIT AREA ━━━ */
+.submit-area{background:var(--bg-white);border:1px solid var(--border);border-radius:14px;padding:32px 28px;box-shadow:var(--shadow-sm);}
+.submit-heading{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--text);margin-bottom:6px;}
+.submit-note{font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:22px;}
+.submit-privacy{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:var(--bg-section);border:1px solid var(--border);border-radius:8px;font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:22px;}
+.submit-privacy input{width:15px;height:15px;accent-color:var(--verde);flex-shrink:0;margin-top:1px;}
+.btn-submit{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--verde);color:#fff;font-family:var(--font-display);font-size:16px;font-weight:700;padding:16px 28px;border-radius:10px;border:none;cursor:pointer;box-shadow:0 4px 18px rgba(21,128,61,.35);transition:all .25s;}
+.btn-submit:hover{background:var(--verde-mid);transform:translateY(-2px);box-shadow:0 8px 28px rgba(21,128,61,.4);}
+.btn-submit:disabled{background:#94a3b8;cursor:not-allowed;box-shadow:none;transform:none;}
+.btn-submit .btn-icon{font-size:20px;}
+
+/* ━━━ SUCCESS ━━━ */
+#form-success{display:none;max-width:600px;margin:0 auto;text-align:center;padding:60px 32px;}
+.success-icon{font-size:72px;margin-bottom:20px;}
+.success-title{font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--verde);margin-bottom:12px;}
+.success-text{font-size:15px;color:var(--text-mid);line-height:1.8;margin-bottom:28px;}
+.success-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:32px;text-align:left;}
+.success-card{background:var(--bg-white);border:1px solid var(--border-g);border-radius:10px;padding:16px;display:flex;align-items:flex-start;gap:10px;}
+.success-card .sc-icon{font-size:22px;flex-shrink:0;}
+.success-card .sc-title{font-weight:700;font-size:13px;color:var(--text);}
+.success-card .sc-text{font-size:12px;color:var(--text-dim);margin-top:2px;line-height:1.5;}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;background:var(--verde);color:#fff;font-weight:700;font-size:15px;padding:14px 26px;border-radius:10px;text-decoration:none;box-shadow:0 4px 18px rgba(21,128,61,.35);transition:all .25s;margin-bottom:12px;}
+.btn-wa:hover{background:var(--verde-mid);transform:translateY(-2px);}
+.btn-home{display:inline-flex;align-items:center;gap:6px;color:var(--azul);font-size:13px;font-weight:600;text-decoration:none;padding:10px 18px;border-radius:8px;border:1.5px solid var(--border-b);background:var(--azul-light);transition:all .2s;}
+.btn-home:hover{background:#bfdbfe;}
+
+/* ━━━ FOOTER ━━━ */
+footer{background:var(--text);color:#94a3b8;padding:28px 5%;text-align:center;font-size:12px;line-height:1.8;}
+footer strong{color:#fff;}
+footer a{color:var(--verde-neon);text-decoration:none;}
+
+/* ━━━ RESPONSIVE ━━━ */
+@media(max-width:640px){
+  .field-row{grid-template-columns:1fr;}
+  .check-grid{grid-template-columns:1fr;}
+  .radio-group.inline{flex-direction:column;}
+  .sec-body{padding:20px 16px;}
+  .sec-header{padding:16px 20px;}
+  .success-cards{grid-template-columns:1fr;}
+  .nav-back span{display:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="Waychem Logo">
+    <div class="nav-brand-wrap">
+      <span class="nav-brand">Waychem</span>
+      <span class="nav-sub">Solubac · Panamá</span>
+    </div>
+  </a>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="index.html" class="nav-back"><span>←</span> <span>Volver al sitio</span></a>
+    <a href="https://wa.me/50769538288?text=Hola%2C+me+interesa+la+capacitaci%C3%B3n+en+sanitizaci%C3%B3n+para+mi+restaurante" target="_blank" class="nav-wa">💬 WhatsApp</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="form-hero">
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">🍽️ Capacitación Especializada</div>
+    <h1 class="hero-title">Capacitación Profesional en<br><span class="accent-g">Sanitización e Higiene</span><br>para Restaurantes</h1>
+    <p class="hero-desc">
+      Gracias por su interés en nuestras capacitaciones de sanitización e higiene alimentaria.
+      Este formulario nos permitirá conocer las necesidades de su restaurante y preparar una
+      <strong>propuesta personalizada</strong> para su equipo.
+    </p>
+    <div class="hero-meta">
+      <span class="meta-pill green">✓ Información confidencial</span>
+      <span class="meta-pill blue">⏱ 3 a 5 minutos</span>
+      <span class="meta-pill">📋 Sin costo de cotización</span>
+    </div>
+  </div>
+</div>
+
+<!-- FORM CONTENT -->
+<div class="form-wrap">
+
+  <!-- PROGRESS -->
+  <div class="progress-bar">
+    <div class="progress-label">
+      <span>Progreso del formulario</span>
+      <span id="prog-pct">0%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="prog-fill"></div>
+    </div>
+    <div class="progress-steps">
+      <div class="prog-step active" id="ps-1">1. Cliente</div>
+      <div class="prog-step" id="ps-2">2. Negocio</div>
+      <div class="prog-step" id="ps-3">3. Capacitación</div>
+      <div class="prog-step" id="ps-4">4. Logística</div>
+      <div class="prog-step" id="ps-5">5. Cierre</div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <form id="main-form" novalidate>
+
+    <!-- SECCIÓN 1 — INFORMACIÓN DEL CLIENTE -->
+    <div class="form-section" id="section-1">
+      <div class="sec-header" onclick="toggleSection(1)">
+        <div class="sec-num green">1</div>
+        <div class="sec-info">
+          <div class="sec-title">Información del Cliente</div>
+          <div class="sec-subtitle">Datos del restaurante y persona de contacto</div>
+        </div>
+        <span class="sec-toggle" id="tog-1">▼</span>
+      </div>
+      <div class="sec-body" id="body-1">
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" for="nombre-restaurante">Nombre del restaurante <span class="req">*</span></label>
+            <input type="text" id="nombre-restaurante" name="nombre_restaurante" placeholder="Ej. Restaurante El Rincón Chiriquí" required>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="nombre-encargado">Nombre del propietario o encargado <span class="req">*</span></label>
+            <input type="text" id="nombre-encargado" name="nombre_encargado" placeholder="Nombre completo" required>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" for="cargo">Cargo</label>
+            <input type="text" id="cargo" name="cargo" placeholder="Ej. Gerente, Dueño, Chef Ejecutivo">
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="telefono">Número de teléfono <span class="req">*</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej. 6953-8288" required>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" for="whatsapp">WhatsApp</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Si es diferente al teléfono">
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="correo">Correo electrónico <span class="req">*</span></label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+          </div>
+        </div>
+
+        <div class="field-row full">
+          <div class="field-group">
+            <label class="field-label" for="direccion">Dirección del establecimiento</label>
+            <textarea id="direccion" name="direccion" placeholder="Calle, barrio, ciudad, provincia…"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECCIÓN 2 — INFORMACIÓN DEL NEGOCIO -->
+    <div class="form-section" id="section-2">
+      <div class="sec-header" onclick="toggleSection(2)">
+        <div class="sec-num green">2</div>
+        <div class="sec-info">
+          <div class="sec-title">Información del Negocio</div>
+          <div class="sec-subtitle">Tipo de establecimiento y personal</div>
+        </div>
+        <span class="sec-toggle" id="tog-2">▼</span>
+      </div>
+      <div class="sec-body collapsed" id="body-2">
+
+        <div class="field-row full">
+          <div class="field-group">
+            <label class="field-label">Tipo de establecimiento <span class="req">*</span></label>
+            <div class="radio-group inline" id="tipo-establecimiento">
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Restaurante" required> Restaurante</label>
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Cafetería"> Cafetería</label>
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Food Truck"> Food Truck</label>
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Bar / Lounge"> Bar / Lounge</label>
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Panadería"> Panadería</label>
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Catering"> Catering</label>
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Hotel"> Hotel</label>
+              <label class="radio-opt"><input type="radio" name="tipo_establecimiento" value="Otro"> Otro</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-divider"></div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label">¿Cuántos empleados tiene actualmente? <span class="req">*</span></label>
+            <div class="radio-group" id="num-empleados">
+              <label class="radio-opt"><input type="radio" name="num_empleados" value="1 a 5" required> 1 a 5</label>
+              <label class="radio-opt"><input type="radio" name="num_empleados" value="6 a 10"> 6 a 10</label>
+              <label class="radio-opt"><input type="radio" name="num_empleados" value="11 a 20"> 11 a 20</label>
+              <label class="radio-opt"><input type="radio" name="num_empleados" value="Más de 20"> Más de 20</label>
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="personas-capacitar">¿Cuántas personas necesitan capacitación? <span class="req">*</span></label>
+            <input type="text" id="personas-capacitar" name="personas_capacitar" placeholder="Número de personas" required>
+            <span class="field-hint">Puede ser un número estimado</span>
+
+            <div style="margin-top:18px;">
+              <label class="field-label">¿Cuenta con protocolos de higiene y sanitización? <span class="req">*</span></label>
+              <div class="radio-group" id="tiene-protocolos" style="margin-top:8px;">
+                <label class="radio-opt"><input type="radio" name="tiene_protocolos" value="Sí" required> Sí</label>
+                <label class="radio-opt"><input type="radio" name="tiene_protocolos" value="Parcialmente"> Parcialmente</label>
+                <label class="radio-opt"><input type="radio" name="tiene_protocolos" value="No"> No</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECCIÓN 3 — NECESIDADES DE CAPACITACIÓN -->
+    <div class="form-section" id="section-3">
+      <div class="sec-header" onclick="toggleSection(3)">
+        <div class="sec-num blue">3</div>
+        <div class="sec-info">
+          <div class="sec-title">Necesidades de Capacitación</div>
+          <div class="sec-subtitle">Temas, desafíos y expectativas</div>
+        </div>
+        <span class="sec-toggle" id="tog-3">▼</span>
+      </div>
+      <div class="sec-body collapsed" id="body-3">
+
+        <div class="field-row full">
+          <div class="field-group">
+            <label class="field-label">¿Qué temas desea reforzar en su equipo?</label>
+            <span class="field-hint">Puede seleccionar uno o varios temas</span>
+            <div class="check-grid" id="temas-capacitacion" style="margin-top:8px;">
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Lavado correcto de manos"> Lavado correcto de manos</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Manipulación segura de alimentos"> Manipulación segura de alimentos</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Prevención de contaminación cruzada"> Prevención de contaminación cruzada</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Limpieza y desinfección"> Limpieza y desinfección</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Manejo de químicos"> Manejo de químicos</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Control de plagas"> Control de plagas</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Temperaturas seguras de alimentos"> Temperaturas seguras de alimentos</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Higiene personal del personal"> Higiene personal del personal</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Protocolos sanitarios en cocina"> Protocolos sanitarios en cocina</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Atención a inspecciones sanitarias"> Atención a inspecciones sanitarias</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Buenas prácticas de manufactura"> Buenas prácticas de manufactura</label>
+              <label class="check-opt"><input type="checkbox" name="temas[]" value="Otro"> Otro</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-divider"></div>
+
+        <div class="field-row full">
+          <div class="field-group">
+            <label class="field-label" for="desafio-sanitario">¿Cuál es el principal desafío sanitario de su restaurante actualmente?</label>
+            <textarea id="desafio-sanitario" name="desafio_sanitario" placeholder="Cuéntenos brevemente cuál es la situación actual de su establecimiento…"></textarea>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label">¿Ha recibido capacitación anteriormente?</label>
+            <div class="radio-group" id="capacitacion-previa">
+              <label class="radio-opt"><input type="radio" name="capacitacion_previa" value="Sí"> Sí</label>
+              <label class="radio-opt"><input type="radio" name="capacitacion_previa" value="No"> No</label>
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="que-mejorar">¿Qué espera mejorar después de esta capacitación?</label>
+            <textarea id="que-mejorar" name="que_mejorar" placeholder="Ej. Reducir rechazos de inspecciones, mejorar la higiene del personal…"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECCIÓN 4 — LOGÍSTICA Y PROGRAMACIÓN -->
+    <div class="form-section" id="section-4">
+      <div class="sec-header" onclick="toggleSection(4)">
+        <div class="sec-num blue">4</div>
+        <div class="sec-info">
+          <div class="sec-title">Logística y Programación</div>
+          <div class="sec-subtitle">Modalidad, horario y fecha preferida</div>
+        </div>
+        <span class="sec-toggle" id="tog-4">▼</span>
+      </div>
+      <div class="sec-body collapsed" id="body-4">
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label">Modalidad preferida <span class="req">*</span></label>
+            <div class="radio-group" id="modalidad">
+              <label class="radio-opt"><input type="radio" name="modalidad" value="Presencial" required> 🏢 Presencial</label>
+              <label class="radio-opt"><input type="radio" name="modalidad" value="Virtual"> 💻 Virtual</label>
+              <label class="radio-opt"><input type="radio" name="modalidad" value="Híbrida"> 🔀 Híbrida</label>
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label">Horario disponible para capacitación</label>
+            <span class="field-hint">Puede seleccionar varios</span>
+            <div class="radio-group" id="horario" style="margin-top:8px;">
+              <label class="check-opt"><input type="checkbox" name="horario[]" value="Mañana"> 🌅 Mañana</label>
+              <label class="check-opt"><input type="checkbox" name="horario[]" value="Tarde"> ☀️ Tarde</label>
+              <label class="check-opt"><input type="checkbox" name="horario[]" value="Noche"> 🌙 Noche</label>
+              <label class="check-opt"><input type="checkbox" name="horario[]" value="Fin de semana"> 📅 Fin de semana</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label" for="fecha-capacitacion">Fecha aproximada para la capacitación</label>
+            <input type="date" id="fecha-capacitacion" name="fecha_capacitacion">
+            <span class="field-hint">Fecha tentativa — coordinaremos con usted</span>
+          </div>
+          <div class="field-group">
+            <label class="field-label">¿Necesita certificados para el personal?</label>
+            <div class="radio-group" id="necesita-certificados" style="margin-top:4px;">
+              <label class="radio-opt"><input type="radio" name="necesita_certificados" value="Sí"> ✅ Sí</label>
+              <label class="radio-opt"><input type="radio" name="necesita_certificados" value="No"> ❌ No</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECCIÓN 5 — CIERRE COMERCIAL -->
+    <div class="form-section" id="section-5">
+      <div class="sec-header" onclick="toggleSection(5)">
+        <div class="sec-num green">5</div>
+        <div class="sec-info">
+          <div class="sec-title">Cierre Comercial</div>
+          <div class="sec-subtitle">Cotización y preferencias de comunicación</div>
+        </div>
+        <span class="sec-toggle" id="tog-5">▼</span>
+      </div>
+      <div class="sec-body collapsed" id="body-5">
+
+        <div class="form-alert">
+          <span class="alert-icon">💡</span>
+          <span>Le enviaremos una <strong>propuesta personalizada</strong> en un plazo de 24 a 48 horas hábiles. No se generan costos por recibir la cotización.</span>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label class="field-label">¿Desea recibir una cotización personalizada? <span class="req">*</span></label>
+            <div class="radio-group" id="desea-cotizacion">
+              <label class="radio-opt"><input type="radio" name="desea_cotizacion" value="Sí" required> Sí, envíenme la propuesta</label>
+              <label class="radio-opt"><input type="radio" name="desea_cotizacion" value="No"> Solo deseo información general</label>
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label">¿Desea recibir información sobre futuras capacitaciones y promociones?</label>
+            <div class="radio-group" id="desea-promo">
+              <label class="radio-opt"><input type="radio" name="desea_promo" value="Sí"> Sí, me interesa</label>
+              <label class="radio-opt"><input type="radio" name="desea_promo" value="No"> No, gracias</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-row full">
+          <div class="field-group">
+            <label class="field-label" for="comentarios">Comentarios adicionales</label>
+            <textarea id="comentarios" name="comentarios" style="min-height:110px;" placeholder="¿Hay algo más que desee contarnos sobre su restaurante o sobre la capacitación que necesita?"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SUBMIT -->
+    <div class="submit-area">
+      <div class="submit-heading">Todo listo para enviar su solicitud</div>
+      <p class="submit-note">Nuestro equipo revisará su solicitud y se pondrá en contacto para coordinar la capacitación y enviarle una propuesta adaptada a su restaurante.</p>
+      <div class="submit-privacy">
+        <input type="checkbox" id="acepta-privacidad" required>
+        <label for="acepta-privacidad">Acepto que la información suministrada sea utilizada únicamente para fines de contacto y cotización por parte del equipo de Waychem.</label>
+      </div>
+      <button type="submit" class="btn-submit" id="btn-submit">
+        <span class="btn-icon">📩</span>
+        Enviar Solicitud de Capacitación
+      </button>
+    </div>
+
+  </form>
+
+  <!-- SUCCESS -->
+  <div id="form-success">
+    <div class="success-icon">🎉</div>
+    <h2 class="success-title">¡Solicitud Recibida!</h2>
+    <p class="success-text">Gracias por completar este formulario.<br>
+    Nuestro equipo revisará su solicitud y se pondrá en contacto con usted para coordinar la capacitación y enviarle una propuesta adaptada a las necesidades de su restaurante.</p>
+    <div class="success-cards">
+      <div class="success-card">
+        <span class="sc-icon">⏱️</span>
+        <div>
+          <div class="sc-title">Tiempo de respuesta</div>
+          <div class="sc-text">Nos comunicaremos en las próximas 24 a 48 horas hábiles.</div>
+        </div>
+      </div>
+      <div class="success-card">
+        <span class="sc-icon">📋</span>
+        <div>
+          <div class="sc-title">Propuesta personalizada</div>
+          <div class="sc-text">Recibirá una cotización adaptada a su restaurante sin ningún costo.</div>
+        </div>
+      </div>
+      <div class="success-card">
+        <span class="sc-icon">📲</span>
+        <div>
+          <div class="sc-title">Contacto directo</div>
+          <div class="sc-text">Puede escribirnos por WhatsApp si tiene alguna pregunta urgente.</div>
+        </div>
+      </div>
+      <div class="success-card">
+        <span class="sc-icon">🏅</span>
+        <div>
+          <div class="sc-title">Certificación disponible</div>
+          <div class="sc-text">Emitimos certificados de participación para su personal.</div>
+        </div>
+      </div>
+    </div>
+    <a href="https://wa.me/50769538288?text=Hola%2C+acabo+de+enviar+el+formulario+de+capacitaci%C3%B3n+en+sanitizaci%C3%B3n+para+mi+restaurante.+%C2%BFPodr%C3%ADan+contactarme%3F" target="_blank" class="btn-wa">💬 Contactar por WhatsApp ahora</a>
+    <br>
+    <a href="index.html" class="btn-home">← Volver al sitio principal</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Waychem</strong> — Soluciones Químicas y Biotecnológicas · David, Chiriquí, Panamá<br>
+  📞 <a href="tel:+50769538288">6953-8288</a> &nbsp;|&nbsp; ✉️ <a href="mailto:servicioswaychem@gmail.com">servicioswaychem@gmail.com</a> &nbsp;|&nbsp; 📍 David, Chiriquí, Panamá<br>
+  <span style="color:#475569;font-size:11px;">La información suministrada es confidencial y será utilizada únicamente para fines de contacto y cotización.</span>
+</footer>
+
+<script>
+// ━━━ TOGGLE SECTIONS ━━━
+function toggleSection(n) {
+  const body = document.getElementById('body-' + n);
+  const tog = document.getElementById('tog-' + n);
+  const isOpen = !body.classList.contains('collapsed');
+  body.classList.toggle('collapsed');
+  tog.textContent = isOpen ? '▼' : '▲';
+  if (!isOpen) updateProgress();
+}
+
+// ━━━ RADIO / CHECKBOX HIGHLIGHT ━━━
+document.querySelectorAll('.radio-opt, .check-opt').forEach(opt => {
+  const inp = opt.querySelector('input');
+  const name = inp.name;
+
+  inp.addEventListener('change', () => {
+    if (inp.type === 'radio') {
+      document.querySelectorAll(`input[name="${name}"]`).forEach(r => {
+        r.closest('.radio-opt')?.classList.remove('selected');
+      });
+    }
+    if (inp.checked) opt.classList.add('selected');
+    else opt.classList.remove('selected');
+    updateProgress();
+  });
+});
+
+// ━━━ PROGRESS ━━━
+function updateProgress() {
+  const fields = document.querySelectorAll('#main-form [required]');
+  let filled = 0;
+  fields.forEach(f => {
+    if (f.type === 'radio' || f.type === 'checkbox') {
+      const group = document.querySelectorAll(`input[name="${f.name}"]:checked`);
+      if (group.length > 0) filled++;
+    } else if (f.value.trim() !== '') {
+      filled++;
+    }
+  });
+  const total = [...new Set([...fields].map(f => f.name || f.id))].length;
+  const pct = total > 0 ? Math.round((filled / total) * 100) : 0;
+  document.getElementById('prog-fill').style.width = pct + '%';
+  document.getElementById('prog-pct').textContent = pct + '%';
+
+  // Step highlights
+  const s1 = ['nombre_restaurante','nombre_encargado','telefono','correo'];
+  const s2 = ['tipo_establecimiento','num_empleados','personas_capacitar','tiene_protocolos'];
+  const s4 = ['modalidad'];
+  const s5 = ['desea_cotizacion'];
+
+  markStep('ps-1', s1);
+  markStep('ps-2', s2);
+  markStep('ps-4', s4);
+  markStep('ps-5', s5);
+}
+
+function markStep(stepId, fieldNames) {
+  const el = document.getElementById(stepId);
+  const done = fieldNames.every(n => {
+    const inputs = document.querySelectorAll(`[name="${n}"]`);
+    if (!inputs.length) return false;
+    if (inputs[0].type === 'radio') return [...inputs].some(i => i.checked);
+    return inputs[0].value.trim() !== '';
+  });
+  if (done) { el.classList.add('done'); el.classList.remove('active'); }
+}
+
+// ━━━ LIVE INPUT ━━━
+document.querySelectorAll('input[type=text],input[type=email],input[type=tel],input[type=date],textarea').forEach(inp => {
+  inp.addEventListener('input', updateProgress);
+});
+
+// ━━━ AUTO-OPEN NEXT SECTION ━━━
+// Open all sections by default for better UX on desktop
+document.querySelectorAll('.sec-body.collapsed').forEach(b => {
+  b.classList.remove('collapsed');
+});
+document.querySelectorAll('.sec-toggle').forEach(t => t.textContent = '▲');
+
+// ━━━ SUBMIT ━━━
+document.getElementById('main-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Validación básica
+  const required = ['nombre_restaurante','nombre_encargado','telefono','correo'];
+  let ok = true;
+  required.forEach(n => {
+    const el = document.querySelector(`[name="${n}"]`);
+    if (!el || !el.value.trim()) { ok = false; el && el.focus(); }
+  });
+
+  const privacidad = document.getElementById('acepta-privacidad');
+  if (!privacidad.checked) {
+    privacidad.focus();
+    privacidad.style.outline = '2px solid #ef4444';
+    setTimeout(() => privacidad.style.outline = '', 2500);
+    ok = false;
+  }
+
+  if (!ok) {
+    alert('Por favor complete los campos obligatorios marcados con *');
+    return;
+  }
+
+  // Deshabilitar botón
+  const btn = document.getElementById('btn-submit');
+  btn.disabled = true;
+  btn.innerHTML = '⏳ Enviando…';
+
+  // ── URL del Web App de Google Apps Script ────────────────────────────────
+  // Pegue aquí la URL que obtiene al desplegar el script como Web App.
+  // Instrucciones en: google-apps-script.gs (incluido en este repositorio)
+  // ─────────────────────────────────────────────────────────────────────────
+  const SCRIPT_URL = 'PEGAR_URL_DEL_WEB_APP_AQUI';
+
+  // Recolectar todos los campos del formulario en un objeto plano
+  const formEl = this;
+  const payload = {};
+  payload.timestamp = new Date().toLocaleString('es-PA', { timeZone: 'America/Panama' });
+
+  // Campos de texto / email / tel / date / textarea
+  formEl.querySelectorAll('input[type=text],input[type=email],input[type=tel],input[type=date],textarea')
+    .forEach(f => { if (f.name) payload[f.name] = f.value.trim(); });
+
+  // Radios — tomar el seleccionado
+  const radioNames = [...new Set([...formEl.querySelectorAll('input[type=radio]')].map(r => r.name))];
+  radioNames.forEach(n => {
+    const checked = formEl.querySelector(`input[name="${n}"]:checked`);
+    payload[n] = checked ? checked.value : '';
+  });
+
+  // Checkboxes — unir valores seleccionados con coma
+  const checkNames = [...new Set([...formEl.querySelectorAll('input[type=checkbox][name]')].map(c => c.name))];
+  checkNames.forEach(n => {
+    if (n === 'acepta-privacidad') return;
+    const checked = [...formEl.querySelectorAll(`input[name="${n}"]:checked`)].map(c => c.value);
+    payload[n] = checked.join(', ');
+  });
+
+  // Envío a Google Sheets via Apps Script (mode no-cors: no leemos respuesta)
+  fetch(SCRIPT_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain' },
+    body: JSON.stringify(payload)
+  })
+  .then(() => showSuccess())
+  .catch(() => showSuccess());
+});
+
+function showSuccess() {
+  document.getElementById('main-form').style.display = 'none';
+  document.querySelector('.progress-bar').style.display = 'none';
+  const s = document.getElementById('form-success');
+  s.style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
